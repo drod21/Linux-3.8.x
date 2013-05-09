@@ -244,7 +244,7 @@ CONFIG_SHELL := $(shell if [ -x "$$BASH" ]; then echo $$BASH; \
 	  else echo sh; fi ; fi)
 
 HOSTCC       = gcc -march=corei7-avx -mtune=corei7-avx
-HOSTCXX      = g++ march=-corei7-avx -mtune=corei7-avx
+HOSTCXX      = g++ -march=corei7-avx -mtune=corei7-avx
 HOSTCFLAGS   = -Wall -Wmissing-prototypes -Wstrict-prototypes -O3 -fomit-frame-pointer
 HOSTCXXFLAGS = -O3
 
